@@ -1,0 +1,13 @@
+.header-a{
+    color: var(--secondary);
+    transition: var(--transition);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.header-a:hover{
+    color: var(--white);
+}
+
+
+
+
