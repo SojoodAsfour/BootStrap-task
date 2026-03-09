@@ -843,7 +843,7 @@ a{
 }
 
 .f-TNR{
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .f-Segoe{
@@ -857,3 +857,35 @@ a{
 .f-Lucida{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.max-w-600{
+    max-width: 600px;
+}
+
+.max-w-700{
+    max-width: 700px;
+}
+
+.max-w-800{
+    max-width: 800px;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    outline: none;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.input:focus{
+    border-color: var(--primary);
+}
+
