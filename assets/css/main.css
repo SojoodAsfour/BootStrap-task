@@ -74,7 +74,7 @@
 }
 
 @media screen and (min-width:0) and (max-width: 1000px) {
-    .hero{
+    .hero {
         background-attachment: scroll;
         overflow: visible;
     }
@@ -129,5 +129,67 @@
 
     .about-p {
         max-width: 90%;
+    }
+}
+
+.service-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+
+.service-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.service .row {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.service-item h3{
+    color: var(--dark);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.service-item p {
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--secondary);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .service .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-item p {
+        max-width: 250px;
+    }
+
+    .service-item img {
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 700px) {
+    .service .row {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item p {
+        max-width: 300px;
+    }
+
+    .service-item img {
+        width: 10%;
     }
 }
