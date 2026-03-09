@@ -129,6 +129,10 @@ a{
     padding-bottom: calc(var(--spacer) * 10);
 }
 
+.pb-15{
+    padding-bottom: calc(var(--spacer) * 15);
+}
+
 .pb-20{
     padding-bottom: calc(var(--spacer) * 20);
 }
@@ -270,6 +274,14 @@ a{
     margin-top: calc(var(--spacer) * 5);
 }
 
+.mt-10{
+    margin-top: calc(var(--spacer) * 10);
+}
+
+.mt-15{
+    margin-top: calc(var(--spacer) * 15);
+}
+
 .mb-1{
     margin-bottom: calc(var(--spacer) * 1);
 }
@@ -313,6 +325,11 @@ a{
 .my-5{
     margin-top: calc(var(--spacer) * 5);
     margin-bottom: calc(var(--spacer) * 5);
+}
+
+.my-15{
+    margin-top: calc(var(--spacer) * 15);
+    margin-bottom: calc(var(--spacer) * 15);
 }
 
 .mr-1{
@@ -809,4 +826,34 @@ a{
 
 .max-w-500{
     max-width: 500px;
+}
+
+.portfolio-p{
+    color: var(--secondary);
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.portfolio-h3{
+    color: var(--white);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.f-TNR{
+    font-family: 'Times New Roman';
+}
+
+.f-Segoe{
+    font-family: 'Segoe UI';
+}
+
+.f-Gill-Sans{
+    font-family: 'Gill Sans';
+}
+
+.f-Lucida{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
