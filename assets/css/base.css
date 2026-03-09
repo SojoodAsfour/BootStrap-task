@@ -100,6 +100,10 @@ a{
     padding-top: calc(var(--spacer) * 5);
 }
 
+.pt-20{
+    padding-top: calc(var(--spacer) * 20);
+}
+
 .pb-1{
     padding-bottom: calc(var(--spacer) * 1);
 }
@@ -118,6 +122,10 @@ a{
 
 .pb-5{
     padding-bottom: calc(var(--spacer) * 5);
+}
+
+.pb-10{
+    padding-bottom: calc(var(--spacer) * 10);
 }
 
 .py-1{
@@ -143,6 +151,11 @@ a{
 .py-5{
     padding-top: calc(var(--spacer) * 5);
     padding-bottom: calc(var(--spacer) * 5);
+}
+
+.py-20{
+    padding-top: calc(var(--spacer) * 20);
+    padding-bottom: calc(var(--spacer) * 20);
 }
 
 .pr-1{
@@ -399,7 +412,7 @@ a{
 /*font size*/
 
 .fs-1{
-    font-size: calc(var(--spacer) * 3);
+    font-size: calc(var(--spacer) *3.5);
 }
 
 .fs-2{
@@ -745,4 +758,18 @@ a{
 
 .btn-primary:hover{
     background-color: #db532e;
+}
+
+.btn-light{
+    background-color: var(--white);
+    color: var(--black);
+    
+}
+
+.btn-light:hover{
+    background-color: #ccb9b4;
+}
+
+.min-vh-100{
+    min-height: 100vh;
 }
