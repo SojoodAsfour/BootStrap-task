@@ -20,7 +20,7 @@
 :root{
     --spacer: 5px;
     --primary: #f4623a;
-    --secondary: #a3ab8c;
+    --secondary: #6c757d;
     --success: #198754;
     --danger: #dc3545;
     --warning: #ffc107;
@@ -875,6 +875,14 @@ a{
     margin-right: auto;
 }
 
+img{
+    max-width: 100%;
+}
+
+textarea{
+    resize: vertical;
+}
+
 .input{
     width: 100%;
     padding: 20px;
@@ -889,3 +897,49 @@ a{
     border-color: var(--primary);
 }
 
+.section-title{
+    max-width: 600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.section-title::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.section-title-light::after{
+    background: var(--white);
+}
+
+.section-text{
+    max-width: 600px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+.overlay-center{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.overlay-primary{
+    background-color: #f4623ad2;
+}

@@ -12,8 +12,7 @@
     display: none;
 }
 
-@media screen and (min-width:0) and (max-width: 700px) {
-
+@media screen and (min-width: 0) and (max-width: 700px) {
     .list {
         display: none;
     }
@@ -23,9 +22,8 @@
     }
 
     .header-a {
-        font-size: 20px;
+        font-size: 18px;
     }
-
 }
 
 
@@ -46,91 +44,85 @@
     z-index: 1;
 }
 
-.hero-title {
-    max-width: 600px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.hero-title::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: var(--primary);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-}
-
-.hero-p {
-    max-width: 600px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
-    line-height: 1.7;
-}
-
-@media screen and (min-width:0) and (max-width: 1000px) {
+@media screen and (min-width: 701px) and (max-width: 1000px) {
     .hero {
         background-attachment: scroll;
         overflow: visible;
     }
 
-    .hero-title {
+    .hero .section-title {
         max-width: 90%;
         font-size: 30px;
     }
 
-    .hero-p {
+    .hero .section-text {
         max-width: 90%;
+        font-size: 17px;
     }
 
-    .btn {
+    .hero .btn {
         padding: 10px 25px;
+        font-size: 14px;
     }
 }
 
-.about-title {
-    max-width: 600px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    line-height: 1.2;
+@media screen and (min-width: 0) and (max-width: 700px) {
+    .hero {
+        background-attachment: scroll;
+        overflow: visible;
+    }
+
+    .hero .section-title {
+        max-width: 90%;
+        font-size: 24px;
+    }
+
+    .hero .section-text {
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .hero .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
 }
 
-.about-title::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: var(--white);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-}
 
-.about-p {
-    max-width: 600px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
-
-@media screen and (min-width:0) and (max-width: 1000px) {
-
-    .about-title {
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .about .section-title {
         max-width: 90%;
         font-size: 30px;
     }
 
-    .about-p {
+    .about .section-text {
         max-width: 90%;
+        font-size: 17px;
+    }
+
+    .about .btn {
+        padding: 10px 25px;
+        font-size: 14px;
     }
 }
+
+@media screen and (min-width: 0) and (max-width: 700px) {
+    .about .section-title {
+        max-width: 90%;
+        font-size: 24px;
+    }
+
+    .about .section-text {
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .about .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}
+
 
 .service-title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -154,7 +146,7 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.service-item h3{
+.service-item h3 {
     color: var(--dark);
     font-family: 'Segoe UI', sans-serif;
 }
@@ -171,12 +163,21 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .service-item p {
-        max-width: 250px;
+    .service-title {
+        font-size: 30px;
     }
 
     .service-item img {
         width: 10%;
+    }
+
+    .service-item h3 {
+        font-size: 22px;
+    }
+
+    .service-item p {
+        max-width: 250px;
+        font-size: 16px;
     }
 }
 
@@ -185,40 +186,45 @@
         grid-template-columns: 1fr;
     }
 
-    .service-item p {
-        max-width: 300px;
+    .service-title {
+        font-size: 24px;
     }
 
     .service-item img {
-        width: 10%;
+        width: 12%;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        max-width: 300px;
+        font-size: 15px;
     }
 }
 
-.portfolio .row{
+
+.portfolio .row {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.portfolio-data{
-    position: absolute;
-    inset: 0;
-    background-color: #f4623ad2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: var(--transition);
-    text-align: center;
-    cursor: pointer;
-}
-
-.portfolio-item:hover .portfolio-data{
+.portfolio-item:hover .portfolio-data {
     opacity: 1;
 }
 
 @media screen and (min-width: 701px) and (max-width: 1000px) {
     .portfolio .row {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio h2 {
+        font-size: 26px;
+    }
+
+    .portfolio .btn {
+        padding: 10px 25px;
+        font-size: 14px;
     }
 }
 
@@ -227,76 +233,73 @@
         grid-template-columns: 1fr;
     }
 
-    .portfolio h2{
-        font-size: 23px;
+    .portfolio h2 {
+        font-size: 21px;
+    }
+
+    .portfolio .btn {
+        padding: 10px 20px;
+        font-size: 12px;
     }
 }
 
-.textarea{
+
+.textarea {
     min-height: 180px;
 }
 
-.contact-h2{
-    max-width: 600px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-}
-
-.contact-h2::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: var(--primary);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-}
-
-.contact-p {
-    max-width: 600px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--secondary);
-    text-align: center;
-}
-
-@media screen and (min-width: 701px) and (max-width: 1000px){
-    .contact-h2{
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .contact .section-title {
         max-width: 90%;
         font-size: 30px;
     }
 
-    .contact-p{
+    .contact .section-text {
         max-width: 90%;
-        font-size: 18px;
+        font-size: 17px;
     }
 
-    .contact form{
+    .contact form {
         width: 90%;
+    }
+
+    .contact .input {
+        font-size: 16px;
+        padding: 18px;
+    }
+
+    .contact .btn {
+        padding: 12px 22px;
+        font-size: 14px;
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 700px){
-    .contact-h2{
-        font-size: 28px;
+@media screen and (min-width: 0) and (max-width: 700px) {
+    .contact .section-title {
+        max-width: 90%;
+        font-size: 24px;
     }
 
-    .contact-p{
-        font-size: 16px;
+    .contact .section-text {
+        max-width: 90%;
+        font-size: 15px;
     }
 
-    .input{
-        padding: 16px;
-        font-size: 16px;
+    .contact form {
+        width: 100%;
     }
 
-    .textarea{
+    .contact .input {
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .textarea {
         min-height: 150px;
     }
 
-    .contact .btn{
-        padding: 14px 20px;
+    .contact .btn {
+        padding: 12px 18px;
+        font-size: 12px;
     }
 }
